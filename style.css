@@ -1,0 +1,1538 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Raleway:wght@500&family=Roboto+Slab:wght@100..900&family=Sevillana&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    --dark-navy: #020c1b;
+    --navy: #0a192f;
+    --light-navy: #112240;
+    --lightest-navy: #233554;
+    --navy-shadow: rgba(2, 12, 27, .7);
+    --dark-slate: #495670;
+    --slate: #8892b0;
+    --light-slate: #a8b2d1;
+    --lightest-slate: #ccd6f6;
+    --white: #e6f1ff;
+    --green: #64ffda;
+    --green-tint: rgba(100, 255, 218, .1);
+    --pink: #f57dff;
+    --blue: #57cbff;
+    --primary-color: #0e1525;
+    --secondary-color: #0e1525;
+    --bg-dark-blue: #091020;
+    --bg-white: #fff;
+    --gray-color: #c6c9d8bf;
+    --gradient-color: linear-gradient(-224deg, var(--primary-color) 0, #337DFF 100%);
+    --gradient-text: linear-gradient(120deg, #1C99FE 20.69%, #7644FF 50.19%, var(--primary-color) 79.69%);
+    --primary-font: 'Poppins', sans-serif;
+    --primary-text: rgb(19, 41, 65);
+    --text-gray: white;
+    --text-white: #fff;
+    list-style: none;
+    text-decoration: none;
+
+}
+
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-image: url('ree.avif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow-y: hidden;
+}
+
+
+:root {
+    --navy-shadow: rgba(0, 0, 0, 0.2);
+    --lightest-slate: #ccd6f6;
+    --navy: #020c1b;
+}
+
+.navbar {
+    width: 100%;
+    padding: 0 20px;
+    height: 10vh;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 5px 5px 5px var(--navy-shadow);
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+}
+
+.navbar ul li {
+    font-family: "Roboto Slab", serif;
+    list-style: none;
+    color: var(--lightest-slate);
+    border-bottom: 2px solid gold;
+}
+
+.navbar ul li:hover {
+    color: gold;
+    transition: 0.5s ease-in-out;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.container .navbar .p img {
+    width: 100%;
+    height: 25vh;
+}
+
+
+.cont {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background-image: url('plain.jpg');
+    background-size: cover;
+    background-repeat: repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+
+.cont h1 {
+    color: var(--light-slate);
+    font-size: 60px;
+    font-weight: 400;
+    font-family: "Sevillana", cursive;
+}
+
+.cont #h1 {
+    color: var(--light-slate);
+    font-size: 40px;
+    font-weight: 400;
+    font-family: "Roboto Slab", serif;
+}
+
+.container .content {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0px 20px;
+    align-items: center;
+}
+
+.container .content .text {
+    width: 50%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.text #h1 {
+    font-weight: 400;
+    color: var(--lightest-slate);
+    font-size: 20px;
+    font-family: "Roboto Slab", serif;
+}
+
+.text #h2 {
+    color: gold;
+    font-size: 50px;
+    font-weight: 500;
+    font-family: "Roboto Slab", serif;
+}
+
+.text #h3 {
+    color: var(--lightest-slate);
+    font-family: "Roboto Slab", serif;
+}
+
+.text button {
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    color: var(--lightest-slate);
+    border: 2px solid var(--lightest-slate);
+    background: transparent;
+}
+
+.text button a{
+    color: var(--lightest-slate);
+}
+.text button a:hover{
+    color: black;
+}
+
+.text button:hover {
+    color: #000;
+    font-weight: bold;
+    background: gold;
+    border: 2px solid gold;
+    transition: 1s ease-in-out;
+}
+
+.container .content .img {
+    width: 50%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+}
+
+.container .content .img img {
+    width: 65%;
+    height: 65vh;
+    border-radius: 50%;
+}
+
+.about {
+    width: 100%;
+    height: 140vh;
+    display: flex;
+    justify-content: space-evenly;
+    background-image: linear-gradient(to right bottom, #232023, #211d21, #1f1b1f, #1c181e, #1a161c);
+}
+
+.subtitle {
+    display: inline-block;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    line-height: 30px;
+    font-size: 40px;
+    margin-bottom: 12px;
+    color: gold;
+    font-family: "Roboto Slab", serif;
+    text-decoration: underline;
+}
+
+.about .myimg {
+    width: 45%;
+    height: 140vh;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.about .myimg img {
+    width: 100%;
+    height: 100vh;
+}
+
+.about .myimg .para {
+    color: var(--lightest-slate);
+    font-family: "Roboto Slab", serif;
+    font-weight: 400;
+}
+
+.val {
+    width: 90%;
+    height: 12vh;
+}
+
+.val p {
+    display: flex;
+    justify-content: space-between;
+    color: var(--gray-color);
+    font-family: "Roboto Slab", serif;
+    font-size: 17px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+
+}
+
+.val span {
+    color: white;
+}
+
+.percent {
+    width: 100%;
+    height: 1vh;
+    background: gray;
+    border-radius: 5px;
+}
+
+.percent #p1 {
+    width: 80%;
+    height: 1vh;
+    background-image: linear-gradient(to right bottom, #000000, #3f3243, #586c95, #2fb4df, #00ffff);
+}
+
+.percent #p2 {
+    width: 75%;
+    height: 1vh;
+    background-image: linear-gradient(to right bottom, #000000, #3f3243, #586c95, #2fb4df, #00ffff);
+}
+
+.percent #p3 {
+    width: 70%;
+    height: 1vh;
+    background-image: linear-gradient(to right bottom, #000000, #3f3243, #586c95, #2fb4df, #00ffff);
+}
+
+.percent #p4 {
+    width: 65%;
+    height: 1vh;
+    background-image: linear-gradient(to right bottom, #000000, #3f3243, #586c95, #2fb4df, #00ffff);
+}
+
+.about .myimg .skills {
+    width: 90%;
+    height: 8vh;
+    border: 1px solid gray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 50px;
+}
+
+.about .myimg .skills button {
+    padding: 12px 20px;
+    border-radius: 50px;
+    background-color: var(--lightest-navy);
+    color: var(--white);
+    border: none;
+    font-size: 16px;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.about .myimg .skills #btn2,
+#btn3 {
+    background: transparent;
+}
+
+.about .myimg .main {
+    width: 100%;
+    height: 50vh;
+}
+
+#Experiance p {
+    font-size: 16px;
+    color: var(--bg-white);
+    font-family: "Roboto Slab", serif;
+    text-decoration: underline;
+}
+
+#Experiance h4 {
+    color: var(--bg-white);
+    font-family: "Roboto Slab", serif;
+    color: rgb(167, 167, 167);
+    font-weight: 300;
+
+}
+
+#Education li {
+    padding: 10px 0px;
+    font-size: 16px;
+    color: var(--bg-white);
+    font-family: "Roboto Slab", serif;
+    text-decoration: underline;
+}
+
+#Education h3 {
+    color: rgb(167, 167, 167);
+    font-weight: 300;
+    font-family: "Roboto Slab", serif;
+}
+
+.third {
+    width: 100%;
+    height: 140vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-image: linear-gradient(to right bottom, #232023, #211d21, #1f1b1f, #1c181e, #1a161c);
+    align-items: center;
+
+}
+
+.third p {
+    width: 70%;
+    font-size: 16px;
+    text-align: center;
+    color: var(--lightest-slate);
+    font-family: "Roboto Slab", serif;
+}
+
+.third #head {
+    color: gold;
+    text-decoration: underline;
+    font-family: "Roboto Slab", serif;
+}
+
+.third .subtitle {
+    display: inline-block;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    line-height: 18px;
+    font-size: 16px;
+    margin-bottom: 12px;
+    background: var(--primary-color);
+    background: var(--gradient-text);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.third .imgs {
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    overflow-x: hidden;
+    justify-content: space-evenly;
+}
+
+.third .imgs .images {
+    width: 20%;
+    height: 40vh;
+    background: white;
+    overflow-y: hidden;
+    border-radius: 5px;
+}
+
+.third .imgs #img1 {
+    background-image: url(https://c8.alamy.com/comp/2BADBRN/vector-icon-of-the-qr-code-simple-flat-design-for-a-logo-a-sticker-for-your-site-or-application-2BADBRN.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.third .imgs #img2 {
+    background-image: url(https://png.pngtree.com/png-vector/20190323/ourmid/pngtree-beach-logo-design-vector-png-image_874307.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.third .imgs #img3 {
+    background-image: url(https://cdn1.vectorstock.com/i/1000x1000/97/25/to-do-list-or-checklist-icon-can-be-used-as-logo-vector-8849725.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.third .imgs #img4 {
+    background-image: url(https://t4.ftcdn.net/jpg/03/04/99/91/360_F_304999191_EQx3O7waJtFYG7ehGI5SbiDxAAY2KMLP.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.third .imgs #img5 {
+    background-image: url(https://i.pinimg.com/564x/45/b4/0f/45b40f8ae208658a0a8ad64370a2bd95.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.third .imgs #img6 {
+    background-image: url(https://static.vecteezy.com/system/resources/thumbnails/009/364/840/small/fast-food-logo-burger-logo-fast-food-premium-logo-template-burger-free-vector.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.third .imgs #img7 {
+    background-image: url(Images/login.avif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.third .imgs #img8 {
+    background-image: url(Images/cash.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.third .imgs .images .value {
+    width: 100%;
+    height: 40vh;
+    background: var(--light-navy);
+    margin-top: 70%;
+    transition: all 1s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.third .imgs .images .value h1 {
+    color: gold;
+    font-family: "Roboto Slab", serif;
+    font-size: 20px;
+    font-weight: 500;
+
+}
+
+.third .imgs .images .value h2 {
+    color: var(--lightest-slate);
+    font-family: "Roboto Slab", serif;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.third .imgs .images .value .button {
+    height: 8vh;
+    width: 100%;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.third .value .button button {
+    padding: 5px 20px;
+    background-color: var(--lightest-navy);
+    color: var(--lightest-slate);
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.third .value .button button:hover {
+    background-color: white;
+    color: #000;
+    transition: all 1s ease-in-out;
+}
+
+.contact {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(to right bottom, #232023, #211d21, #1f1b1f, #1c181e, #1a161c);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.contact .con {
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.contact h1 {
+    color: gold;
+    font-family: "Roboto Slab", serif;
+    text-decoration: underline;
+}
+
+.contact .social {
+    height: 80vh;
+    width: 50%;
+    border-radius: 10px;
+    background: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.contact .social .link {
+    width: 80%;
+    height: 35vh;
+    background: rgb(90, 88, 88);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.contact .social .link p {
+    font-size: 20px;
+    font-family: "Roboto Slab", serif;
+    font-weight: bold;
+    color: var(--bg-dark-blue);
+    letter-spacing: 3px;
+}
+
+.social a {
+    color: var(--lightest-slate);
+    width: 9%;
+    height: 8vh;
+    font-size: 18px;
+    border: 2px solid gold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    text-decoration: none;
+}
+
+.social a:hover {
+    background: gold;
+    transition: all 1s ease-in-out;
+    color: black;
+}
+
+.social .icon a:hover {
+    color: black;
+}
+
+.icon {
+    width: 50%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.social .icon a {
+    color: var(--lightest-slate);
+    width: 17%;
+    height: 8vh;
+    font-size: 18px;
+}
+
+.contact .social .links {
+    width: 100%;
+    height: 35vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.contact .social .links .box {
+    width: 35%;
+    height: 30vh;
+    background: rgb(90, 88, 88);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 3px;
+}
+
+.contact .social .links .box a {
+    width: 20%;
+    height: 8vh;
+}
+
+.contact .social .links .box p {
+    font-size: 20px;
+    font-family: "Roboto Slab", serif;
+    font-weight: bold;
+    color: var(--bg-dark-blue);
+}
+
+.contact .social .links .box h4 {
+    font-size: 15px;
+    font-family: "Roboto Slab", serif;
+    font-weight: bold;
+    color: var(--bg-dark-blue);
+
+}
+
+#form {
+    background-color: #000000;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+.social input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid rgb(90, 88, 88);
+    outline: none;
+    border-radius: 5px;
+    background: transparent;
+    font-size: 16px;
+    color: white;
+}
+
+.social button {
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+    background-color: var(--light-navy);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.social button:hover {
+    background-color: gold;
+    transition: all 1s ease-in-out;
+    color: black;
+}
+
+
+footer {
+    background-image: linear-gradient(to right bottom, #232023, #211d21, #1f1b1f, #1c181e, #1a161c);
+    color: var(--gray-color);
+    font-family: "Roboto Slab", serif;
+    font-weight: bold;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-section {
+    margin: 10px 0;
+}
+
+.footer-section h4 {
+    color: gold;
+    margin-bottom: 10px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    color: var(--gray-color);
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+    .footer-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .footer-section {
+        margin: 0 20px;
+    }
+}
+
+
+@media (max-width: 1200px) {
+    .third {
+        height: 150vh;
+    }
+
+    .third .imgs {
+        flex-wrap: wrap;
+        gap: 10px;
+        height: 41vh;
+    }
+
+    .third .imgs .images {
+        width: 22%;
+        height: 41vh;
+    }
+    .contact {
+        height: 120vh;
+        width: 100%;
+        background-image: linear-gradient(to right bottom, #232023, #211d21, #1f1b1f, #1c181e, #1a161c);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .contact .social {
+        width: 45%;
+        height: 95vh;
+    }
+
+    .contact .social .link{
+        width: 80%;
+    }
+    .contact .social .links .box {
+        width: 45%;
+    }
+    .contact .social .links .box h4 {
+        font-size: 13px;
+        font-family: "Roboto Slab", serif;
+        font-weight: bold;
+        color: var(--bg-dark-blue);
+    }
+    .about .myimg .skills button {
+        padding: 12px 20px;
+        border-radius: 50px;
+        background-color: var(--lightest-navy);
+        color: var(--white);
+        border: none;
+        font-size: 13px;
+        font-weight: 300;
+        cursor: pointer;
+    }
+   
+    #form {
+        background-color: #000000;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 45%;
+        max-width: 100%;
+    }
+    .social a {
+        width: 12%;
+    }
+
+    .social .icon a {
+        width: 20%;
+    }
+
+}
+
+@media (max-width: 992px) {
+    .third {
+        height: 270vh;
+    }
+    .third .imgs {
+        flex-wrap: wrap;
+        gap: 10px;
+        height: 110vh;
+    }
+    .third p {
+        width: 80%;
+    }
+
+    .third .imgs .images {
+        width: 30%;
+        height: 51vh;
+    }
+
+    .contact .social {
+        width: 80%;
+    }
+
+    .social a {
+        width: 10%;
+    }
+
+    .social .icon {
+        flex-direction: row;
+        height: auto;
+    }
+
+    .social .icon a {
+        margin-bottom: 10px;
+        width: 20%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container .navbar ul {
+        width: 70%;
+        justify-content: space-around;
+    }
+
+    .container .navbar .p {
+        width: 15%;
+        height: 15vh;
+    }
+
+    .container .navbar .p img {
+        width: 100%;
+        height: 15vh;
+    }
+
+    .container .content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .container .content .text {
+        width: 100%;
+        height: 60vh;
+    }
+
+    .container .content .img {
+        width: 100%;
+        height: 65vh;
+    }
+
+    .cont {
+        width: 100%;
+        height: 160vh;
+        position: absolute;
+        background-image: url(Images/img1.webp);
+        background-size: cover;
+        background-repeat: repeat;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .container {
+        width: 100%;
+        height: 160vh;
+        background-image: url(Images/img2.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+
+    }
+
+    .container .content {
+        width: 100%;
+        height: 150vh;
+        display: flex;
+        justify-content: space-evenly;
+        padding: 0px 20px;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .container .content .img img {
+        width: 55%;
+        height: 65vh;
+        border-radius: 50%;
+    }
+
+
+    .about {
+        width: 100%;
+        height: 200vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        background-image: linear-gradient(to right bottom, #232023, #211d21, #1f1b1f, #1c181e, #1a161c);
+        flex-direction: column;
+    }
+
+    .about .myimg img {
+        width: 80%;
+        height: 100vh;
+    }
+
+    .about .myimg {
+        width: 90%;
+        height: 100vh;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .about .myimg .skills button {
+        padding: 12px 20px;
+        border-radius: 50px;
+        background-color: var(--lightest-navy);
+        color: var(--white);
+        border: none;
+        font-size: 12px;
+        font-weight: 300;
+        cursor: pointer;
+    }
+
+    .about .myimg .para {
+        color: var(--lightest-slate);
+        font-family: "Roboto Slab", serif;
+        font-weight: 400;
+        text-align: center;
+        font-size: 15px;
+    }
+
+    .subtitle {
+        display: inline-block;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+        line-height: 30px;
+        font-size: 38px;
+        margin-bottom: 12px;
+        color: gold;
+        font-family: "Roboto Slab", serif;
+        text-decoration: underline;
+    }
+
+    .about .myimg .main {
+        width: 100%;
+        height: 50vh;
+        margin-left: 10%;
+        overflow-x: hidden;
+    }
+    .third {
+        height: 340vh;
+    }
+
+    .third .imgs .images .value {
+        width: 100%;
+        height: 30vh;
+        background: var(--light-navy);
+        margin-top: 74%;
+        transition: all 1s ease;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .third .imgs .images {
+        width: 45%;
+        height: 61vh;
+    }
+
+    .third p {
+        width: 90%;
+    }
+
+    .third .imgs {
+        flex-wrap: wrap;
+        gap: 10px;
+        height: 145vh;
+
+    }
+
+    .third .imgs .images .value .button {
+        height: 16vh;
+        width: 100%;
+        background: #000;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+
+    .contact {
+        height: 265vh;
+       
+    }
+
+    #form {
+        background-color: #000000;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 90%;
+        height: 95vh;
+        max-width: 90%;
+    }
+
+    .contact .con {
+        flex-direction: column;
+        height: 250vh;
+    }
+
+    .contact .social {
+        width: 90%;
+        height: 145vh;
+    }
+
+    .contact .social .link {
+        height: 50vh;
+    }
+
+    .contact .social .links {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .contact .social .links .box {
+        width: 80%;
+        height: 35vh;
+        margin-bottom: 20px;
+    }
+    .contact .social .links .box a {
+        width: 13%;
+        height: 11vh;
+        font-size: 18px;
+    }
+    .contact .social .links .box p {
+        font-size: 25px;
+        font-family: "Roboto Slab", serif;
+        font-weight: bold;
+        color: var(--bg-dark-blue);
+    }
+
+    .contact .social .links .box h4 {
+        font-size: 20px;
+        font-family: "Roboto Slab", serif;
+        font-weight: bold;
+        color: var(--bg-dark-blue);
+    }
+
+    .social a {
+        width: 10%;
+        height: 9vh;
+        font-size: 16px;
+    }
+    .contact .social .link p {
+        font-size: 26px;
+        font-family: "Roboto Slab", serif;
+        font-weight: bold;
+        color: var(--bg-dark-blue);
+        letter-spacing: 3px;
+    }
+
+}
+
+@media (max-width: 576px) {
+    .third p {
+        width: 100%;
+    }
+
+    .third .imgs {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .third .imgs .images {
+        width: 90%;
+        height: 70vh;
+    }
+
+    .third .imgs .images .value {
+        margin-top: 60%;
+    }
+
+    .third {
+        height: 660vh;
+    }
+
+    .third .imgs {
+        flex-wrap: wrap;
+        gap: 10px;
+        height: 300vh;
+        display: flex;
+        flex-direction: row;
+    }
+
+    
+    .contact {
+        height: 260vh;
+    }
+    .contact .con {
+        flex-direction: column;
+        height: 245vh;
+  
+    }
+    .contact .social {
+        width: 90%;
+        height: 140vh;
+    }
+
+    .contact .social .link {
+        height: 40vh;
+    }
+    .contact .social .links .box a {
+        width: 12%;
+        height: 9vh;
+        font-size: 18px;
+    }
+
+    .contact .social .link p, .contact .social .links .box p, .contact .social .links .box h4 {
+        font-size: 23px;
+    }
+    .social a {
+        width: 11%;
+        height: 9vh;
+        font-size: 14px;
+    }
+
+    .social .icon {
+        flex-direction: row;
+    }
+
+    .social .icon a {
+        margin-bottom: 10px;
+        width: 20%;
+    }
+
+}
+
+@media screen and (max-width: 464px) {
+    .navbar ul li a {
+        text-decoration: none;
+        color: inherit;
+        font-size: 14px;
+    }
+
+    .container .navbar .p {
+        width: 20%;
+        height: 15vh;
+    }
+
+    .cont h1 {
+        font-size: 40px;
+    }
+
+    .cont #h1 {
+        font-size: 30px;
+    }
+
+    .container .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container .content .text {
+        width: 90%;
+        height: 55vh;
+        text-align: center;
+    }
+
+    .text #h1 {
+        font-size: 18px;
+    }
+
+    .text #h2 {
+        font-size: 40px;
+    }
+
+    .container .content .img {
+        height: 55vh;
+        display: flex;
+        justify-content: center;
+    }
+
+
+    .container .content .img img {
+        width: 75%;
+        height: 55vh;
+        border-radius: 50%;
+    }
+
+    .container .content {
+        width: 100%;
+        height: 125vh;
+        display: flex;
+        justify-content: space-evenly;
+        padding: 0px 20px;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+
+    .container {
+        width: 100%;
+        height: 135vh;
+        background-image: url(Images/img2.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+
+    }
+
+    .cont {
+        width: 100%;
+        height: 135vh;
+        position: absolute;
+        background-image: url(Images/img1.webp);
+        background-size: cover;
+        background-repeat: repeat;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .about {
+        width: 100%;
+        height: 200vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        background-image: linear-gradient(to right bottom, #232023, #211d21, #1f1b1f, #1c181e, #1a161c);
+        flex-direction: column;
+    }
+
+    .about .myimg img {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .val p {
+        display: flex;
+        justify-content: space-between;
+        color: var(--gray-color);
+        font-family: "Roboto Slab", serif;
+        font-size: 15px;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+    }
+
+    .about .myimg {
+        width: 90%;
+        height: 100vh;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .about .myimg .skills button {
+        padding: 12px 20px;
+        border-radius: 50px;
+        background-color: var(--lightest-navy);
+        color: var(--white);
+        border: none;
+        font-size: 12px;
+        font-weight: 300;
+        cursor: pointer;
+    }
+
+    .about .myimg .para {
+        color: var(--lightest-slate);
+        font-family: "Roboto Slab", serif;
+        font-weight: 400;
+        text-align: center;
+        font-size: 12px;
+    }
+
+    .subtitle {
+        display: inline-block;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+        line-height: 30px;
+        font-size: 38px;
+        margin-bottom: 12px;
+        color: gold;
+        font-family: "Roboto Slab", serif;
+        text-decoration: underline;
+    }
+
+    .about .myimg .main {
+        width: 100%;
+        height: 50vh;
+        margin-left: 10%;
+        overflow-x: hidden;
+    }
+
+    .third .imgs .images .value {
+        margin-top: 73%;
+    }
+
+    .third .imgs .images {
+        width: 90%;
+        height: 70vh;
+    }
+
+    .third p {
+        width: 90%;
+        font-size: 14px;
+    }
+}
+
+@media (max-width:400px) {
+    .container .navbar .p {
+        width: 25%;
+        height: 15vh;
+    }
+
+    .container .content .text {
+        width: 90%;
+        height: 50vh;
+        text-align: center;
+    }
+
+    .container .content .img {
+        height: 50vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container .content {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: space-evenly;
+        padding: 0px 20px;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+
+    .container .content .img img {
+        width: 75%;
+        height: 45vh;
+        border-radius: 50%;
+    }
+
+    .container {
+        width: 100%;
+        height: 115vh;
+        background-image: url(Images/img2.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .cont {
+        width: 100%;
+        height: 115vh;
+        position: absolute;
+        background-image: url(Images/img1.webp);
+        background-size: cover;
+        background-repeat: repeat;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .about .myimg img {
+        width: 100%;
+        height: 85vh;
+    }
+
+    .about .myimg {
+        width: 90%;
+        height: 90vh;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .about {
+        width: 100%;
+        height: 150vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        background-image: linear-gradient(to right bottom, #232023, #211d21, #1f1b1f, #1c181e, #1a161c);
+        flex-direction: column;
+    }
+
+    .about .myimg .skills {
+        width: 90%;
+        height: 6vh;
+        border: 1px solid gray;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 50px;
+    }
+
+    .about .myimg .para {
+        font-size: 12px;
+    }
+
+    .val p {
+        font-size: 13px;
+    }
+
+    .val {
+        width: 90%;
+        height: 10vh;
+    }
+
+    .about .myimg .main {
+        height: 40vh;
+    }
+
+
+    #Education li {
+        padding: 10px 0px;
+        font-size: 13px;
+        color: var(--bg-white);
+        font-family: "Roboto Slab", serif;
+        text-decoration: underline;
+    }
+
+    .third .imgs .images {
+        width: 90%;
+        height: 53vh;
+    }
+      #my{
+        height: 60vh;
+     }
+    .third .imgs .images .value {
+        margin-top: 90%;
+        display: flex;
+        height: 30vh;
+        justify-content: space-evenly;
+    }
+
+    .third .imgs {
+        flex-wrap: wrap;
+        gap: 10px;
+        height: 265vh;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .third .imgs .images .value .button {
+        height: 12vh;
+    }
+    .about .myimg img {
+        width: 100%;
+        height: 60vh;
+    }
+
+    .third {
+        height: 575vh;
+    }
+
+    #form {
+       
+        height: 75vh;
+    }
+    .contact .con {
+        flex-direction: column;
+        height: 180vh;
+
+    }
+    .contact .social .links .box h4 {
+        font-size: 17px !important;
+
+    }
+    .social .icon {
+        width: 90%;
+        flex-direction: row;
+    }
+    .social a {
+        width: 18%;
+        height: 8vh;
+        font-size: 17px;
+    }
+    .contact .social .link {
+        width: 90%;
+        height: 35vh;
+    }
+    .contact .social .links .box {
+        width: 90%;
+        height: 25vh;
+        margin-bottom: 20px;
+    }
+    .contact .social .links .box a {
+        width: 18%;
+        height: 8vh;
+        font-size: 18px;
+    } 
+    .contact .social {
+        width: 90%;
+        height: 100vh;
+    }
+    .contact {
+        height: 190vh;
+    }
+
+    footer {
+        height:55vh;
+        background-image: linear-gradient(to right bottom, #232023, #211d21, #1f1b1f, #1c181e, #1a161c);
+        color: var(--gray-color);
+        font-family: "Roboto Slab", serif;
+        font-weight: bold;
+        padding: 30px 0;
+        text-align: center;
+    }
+}
